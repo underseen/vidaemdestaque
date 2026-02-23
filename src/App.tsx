@@ -1,5 +1,5 @@
 import { useEffect, useState, useRef } from 'react';
-import { Clock, XCircle, CheckCircle, ShieldCheck, Star, Heart, AlertCircle, ShieldPlus, Users, Activity, ChevronDown, ChevronUp, Wind, Lock, CreditCard, Zap } from 'lucide-react';
+import { Clock, XCircle, CheckCircle, ShieldCheck, Star, Heart, AlertCircle, ShieldPlus, Users, Activity, ChevronDown, ChevronUp, Lock, CreditCard, Zap } from 'lucide-react';
 import { motion, AnimatePresence } from 'framer-motion';
 
 function useScrollAnimation(threshold = 0.2) {
