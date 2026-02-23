@@ -19,7 +19,7 @@ function StickyBar() {
       <div className="max-w-6xl mx-auto flex items-center justify-center gap-2 text-sm sm:text-base">
         <Zap className="w-4 h-4 animate-pulse" />
         <span className="font-medium">PARA PACIENTES E CUIDADORES:</span>
-        <span>Ferramentas para atravessar o tratamento por apenas R$37</span>
+        <span>Ferramentas de suporte emocional para quem vive o câncer de perto por apenas R$37</span>
       </div>
     </div>
   );
@@ -32,10 +32,10 @@ function HeroSection() {
       <div className="w-full px-4 sm:px-6 lg:px-8 xl:px-12 py-16 sm:py-24">
         <motion.div className="max-w-3xl mx-auto text-center" initial={{ opacity: 0, y: 40 }} animate={isVisible ? { opacity: 1, y: 0 } : {}} transition={{ duration: 0.6 }}>
           <div className="inline-flex items-center gap-2 bg-[#7BA7BC]/15 text-[#5A8A9E] px-4 py-2 rounded-full text-sm font-medium mb-6">
-            <ShieldPlus className="w-4 h-4" /> SUPORTE EMOCIONAL PARA QUEM VIVE O CÂNCER DE PERTO
+            <ShieldPlus className="w-4 h-4" /> Entre uma consulta e outra, existe um período em que o medo ocupa espaço demais.
           </div>
           <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-[#3D4A54] leading-tight mb-6">
-            ENCONTRE <span className="text-[#7BA7BC]">PAZ</span> NOS DIAS DE ESPERA
+            NÃO DEIXE A DOENÇA <span className="text-[#7BA7BC]">PARALISAR</span> A SUA VIDA
           </h1>
           <p className="text-lg sm:text-xl text-[#6B7B8A] mb-4">
             Ferramentas práticas para acalmar a mente entre tratamentos, exames e resultados.
@@ -47,7 +47,7 @@ function HeroSection() {
           <div className="space-y-4">
             <a href="https://pay.kiwify.com.br/f31mMob" className="bg-[#7BA7BC] text-white font-semibold px-8 py-4 rounded-xl inline-block text-lg sm:text-xl hover:bg-[#5A8A9E] hover:scale-[1.02] transition-all shadow-lg shadow-[#7BA7BC]/25">QUERO RECUPERAR MINHA PAZ AGORA</a>
             <p className="text-sm text-[#6B7B8A] flex items-center justify-center gap-2">
-              <Lock className="w-4 h-4" /> Material Digital • Acesso imediato • 15 dias de garantia
+              <Lock className="w-4 h-4" /> Material Digital • Acesso imediato • 15 dias para testar
             </p>
           </div>
         </motion.div>
