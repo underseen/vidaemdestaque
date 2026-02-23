@@ -1,5 +1,5 @@
 import { useEffect, useState, useRef } from 'react';
-import { Clock, XCircle, CheckCircle, ShieldCheck, Star, Heart, AlertCircle, Users, Activity, ChevronDown, ChevronUp, Wind, Lock, CreditCard, Zap } from 'lucide-react';
+import { Clock, XCircle, CheckCircle, ShieldCheck, Star, Heart, AlertCircle, ShieldPlus, Users, Activity, ChevronDown, ChevronUp, Wind, Lock, CreditCard, Zap } from 'lucide-react';
 import { motion, AnimatePresence } from 'framer-motion';
 
 function useScrollAnimation(threshold = 0.2) {
@@ -18,8 +18,8 @@ function StickyBar() {
     <div className="fixed top-0 left-0 right-0 z-50 bg-gradient-to-r from-[#A8C8D8] to-[#7BA7BC] text-white py-2 px-4 shadow-sm">
       <div className="max-w-6xl mx-auto flex items-center justify-center gap-2 text-sm sm:text-base">
         <Zap className="w-4 h-4 animate-pulse" />
-        <span className="font-medium">ACESSO IMEDIATO:</span>
-        <span>Comece sua jornada de alívio por apenas R$37</span>
+        <span className="font-medium">PARA PACIENTES E CUIDADORES:</span>
+        <span>Ferramentas para atravessar o tratamento por apenas R$37</span>
       </div>
     </div>
   );
@@ -32,7 +32,7 @@ function HeroSection() {
       <div className="w-full px-4 sm:px-6 lg:px-8 xl:px-12 py-16 sm:py-24">
         <motion.div className="max-w-3xl mx-auto text-center" initial={{ opacity: 0, y: 40 }} animate={isVisible ? { opacity: 1, y: 0 } : {}} transition={{ duration: 0.6 }}>
           <div className="inline-flex items-center gap-2 bg-[#7BA7BC]/15 text-[#5A8A9E] px-4 py-2 rounded-full text-sm font-medium mb-6">
-            <Wind className="w-4 h-4" /> PROTOCOLO DE CALMA VALIDADO POR +500 PESSOAS
+            <ShieldPlus className="w-4 h-4" /> SUPORTE EMOCIONAL PARA QUEM VIVE O CÂNCER DE PERTO
           </div>
           <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-[#3D4A54] leading-tight mb-6">
             ENCONTRE <span className="text-[#7BA7BC]">PAZ</span> NOS DIAS DE ESPERA
