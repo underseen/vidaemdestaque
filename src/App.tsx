@@ -102,7 +102,7 @@ function CriadorasSection() {
           <div className="flex flex-col md:flex-row items-center gap-8 md:gap-12 max-w-4xl mx-auto">
             <div className="flex-shrink-0">
               <div className="relative">
-                <img src="/creators.jpg" alt="Ana e Carolina" className="w-48 h-48 sm:w-56 sm:h-56 rounded-full object-cover border-4 border-[#A8C8D8]/40 shadow-md" />
+                <img src="/creators.webp" alt="Ana E. e Carolina" className="w-48 h-48 sm:w-56 sm:h-56 rounded-full object-cover border-4 border-[#A8C8D8]/40 shadow-md" />
                 <div className="absolute -bottom-2 -right-2 bg-[#7BA7BC] text-white p-2 rounded-full"><Heart className="w-5 h-5" /></div>
               </div>
             </div>
