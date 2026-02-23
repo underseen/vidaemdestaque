@@ -18,8 +18,7 @@ function StickyBar() {
     <div className="fixed top-0 left-0 right-0 z-50 bg-gradient-to-r from-[#A8C8D8] to-[#7BA7BC] text-white py-2 px-4 shadow-sm">
       <div className="max-w-6xl mx-auto flex items-center justify-center gap-2 text-sm sm:text-base">
         <Zap className="w-4 h-4 animate-pulse" />
-        <span className="font-medium">PARA PACIENTES E CUIDADORES:</span>
-        <span>Ferramentas de suporte emocional para quem vive o câncer de perto por apenas R$37</span>
+        <span className="font-medium">PARA PACIENTES E CUIDADORES: Ferramentas de suporte emocional para quem vive o câncer de perto por apenas R$37</span>
       </div>
     </div>
   );
@@ -37,12 +36,10 @@ function HeroSection() {
           <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-[#3D4A54] leading-tight mb-6">
             NÃO DEIXE A DOENÇA <span className="text-[#7BA7BC]">PARALISAR</span> A SUA VIDA
           </h1>
-          <p className="text-lg sm:text-xl text-[#6B7B8A] mb-4">
-            Ferramentas práticas para acalmar a mente entre tratamentos, exames e resultados.
-          </p>
-          <p className="text-base sm:text-lg text-[#6B7B8A] mb-8 max-w-2xl mx-auto">
-            Quando a ansiedade domina e os pensamentos não param, 
-            <span className="font-semibold text-[#3D4A54]"> existe um protocolo prático para você recuperar o controle emocional em minutos.</span>
+         <p className="text-base sm:text-lg text-[#6B7B8A] mb-8 max-w-2xl mx-auto">
+             <span className="font-semibold text-[#3D4A54]">Entre Consultas</span>span> é um conjunto de ferramentas práticas para acalmar a mente entre tratamentos, exames e resultados.
+             Quando a ansiedade domina e os pensamentos não param, 
+            <span className="font-semibold text-[#3D4A54]"> consulte um protocolo prático para você recuperar o controle emocional em minutos.</span>
           </p>
           <div className="space-y-4">
             <a href="https://pay.kiwify.com.br/f31mMob" className="bg-[#7BA7BC] text-white font-semibold px-8 py-4 rounded-xl inline-block text-lg sm:text-xl hover:bg-[#5A8A9E] hover:scale-[1.02] transition-all shadow-lg shadow-[#7BA7BC]/25">QUERO RECUPERAR MINHA PAZ AGORA</a>
