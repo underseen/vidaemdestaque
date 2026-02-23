@@ -1,0 +1,177 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Montserrat:wght@500;600;700;800&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    /* Paleta de Paz e Tranquilidade */
+    --background: 40 20% 97%;
+    --foreground: 210 15% 25%;
+    --card: 40 15% 98%;
+    --card-foreground: 210 15% 25%;
+    --popover: 40 15% 98%;
+    --popover-foreground: 210 15% 25%;
+    --primary: 200 35% 55%;
+    --primary-foreground: 0 0% 100%;
+    --secondary: 150 25% 45%;
+    --secondary-foreground: 0 0% 100%;
+    --muted: 40 20% 93%;
+    --muted-foreground: 210 10% 45%;
+    --accent: 180 25% 75%;
+    --accent-foreground: 210 15% 25%;
+    --destructive: 0 60% 55%;
+    --destructive-foreground: 0 0% 100%;
+    --border: 40 15% 88%;
+    --input: 40 15% 88%;
+    --ring: 200 35% 55%;
+    --radius: 0.75rem;
+    
+    /* Custom colors - Paleta Serenidade */
+    --serenity-blue: #7BA7BC;
+    --serenity-blue-dark: #5A8A9E;
+    --serenity-blue-light: #A8C8D8;
+    --sage-green: #8BA888;
+    --sage-green-dark: #6B8A68;
+    --sage-green-light: #B5C9B3;
+    --sand-beige: #F5F0E8;
+    --sand-beige-dark: #E8E2D6;
+    --warm-cream: #FAFAF7;
+    --soft-stone: #6B7B8A;
+    --soft-stone-light: #9AA5B0;
+    --ocean-deep: #4A6B7C;
+    --misty-blue: #C5D8E2;
+    --lavender-soft: #B8B8D1;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  
+  html {
+    scroll-behavior: smooth;
+  }
+  
+  body {
+    @apply bg-[#FAFAF7] text-[#3D4A54] antialiased;
+    font-family: 'Inter', sans-serif;
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+  }
+}
+
+@layer components {
+  .btn-primary {
+    @apply bg-[#7BA7BC] text-white font-semibold px-8 py-4 rounded-xl 
+           transition-all duration-300 hover:bg-[#5A8A9E] hover:scale-[1.02]
+           hover:shadow-lg hover:shadow-[#7BA7BC]/25 active:scale-[0.98] text-center;
+  }
+  
+  .btn-secondary {
+    @apply bg-[#8BA888] text-white font-semibold px-8 py-4 rounded-xl 
+           transition-all duration-300 hover:bg-[#6B8A68] hover:scale-[1.02]
+           hover:shadow-lg hover:shadow-[#8BA888]/25 active:scale-[0.98] text-center;
+  }
+  
+  .btn-outline {
+    @apply border-2 border-[#7BA7BC] text-[#7BA7BC] font-semibold px-8 py-4 rounded-xl 
+           transition-all duration-300 hover:bg-[#7BA7BC] hover:text-white
+           active:scale-[0.98] text-center;
+  }
+  
+  .section-container {
+    @apply w-full px-4 sm:px-6 lg:px-8 xl:px-12;
+  }
+  
+  .section-inner {
+    @apply max-w-6xl mx-auto;
+  }
+  
+  .card-hover {
+    @apply transition-all duration-300 hover:-translate-y-1 hover:shadow-lg hover:shadow-[#7BA7BC]/10;
+  }
+  
+  .text-gradient {
+    @apply bg-gradient-to-r from-[#7BA7BC] to-[#8BA888] bg-clip-text text-transparent;
+  }
+  
+  .bg-gradient-serenity {
+    @apply bg-gradient-to-br from-[#7BA7BC] to-[#8BA888];
+  }
+  
+  .bg-gradient-soft {
+    @apply bg-gradient-to-br from-[#A8C8D8] to-[#B5C9B3];
+  }
+}
+
+@layer utilities {
+  .animate-pulse-slow {
+    animation: pulse-slow 3s ease-in-out infinite;
+  }
+  
+  .animate-breathe {
+    animation: breathe 4s ease-in-out infinite;
+  }
+  
+  .animate-float {
+    animation: float 6s ease-in-out infinite;
+  }
+}
+
+@keyframes pulse-slow {
+  0%, 100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+  50% {
+    transform: scale(1.03);
+    opacity: 0.9;
+  }
+}
+
+@keyframes breathe {
+  0%, 100% {
+    opacity: 0.8;
+  }
+  50% {
+    opacity: 1;
+  }
+}
+
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+/* Custom scrollbar - tons suaves */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #F5F0E8;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #A8C8D8;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #7BA7BC;
+}
+
+/* Selection color */
+::selection {
+  background: rgba(123, 167, 188, 0.25);
+}
