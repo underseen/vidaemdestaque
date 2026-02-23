@@ -28,7 +28,7 @@ function StickyBar() {
 function HeroSection() {
   const { ref, isVisible } = useScrollAnimation(0.1);
   return (
-    <section ref={ref} className="relative min-h-screen flex items-center justify-center pt-16" style={{ backgroundImage: 'linear-gradient(180deg, rgba(250,250,247,0.95), rgba(250,250,247,0.88)), url(/hero-bg.jpg)', backgroundSize: 'cover', backgroundPosition: 'center' }}>
+    <section ref={ref} className="relative min-h-screen flex items-center justify-center pt-16" style={{ backgroundImage: 'linear-gradient(180deg, rgba(250,250,247,0.95), rgba(250,250,247,0.88)), url(/hero-bg.webp)', backgroundSize: 'cover', backgroundPosition: 'center' }}>
       <div className="w-full px-4 sm:px-6 lg:px-8 xl:px-12 py-16 sm:py-24">
         <motion.div className="max-w-3xl mx-auto text-center" initial={{ opacity: 0, y: 40 }} animate={isVisible ? { opacity: 1, y: 0 } : {}} transition={{ duration: 0.6 }}>
           <div className="inline-flex items-center gap-2 bg-[#7BA7BC]/15 text-[#5A8A9E] px-4 py-2 rounded-full text-sm font-medium mb-6">
@@ -184,8 +184,8 @@ function ComoFuncionaSection() {
               </div>
             </div>
             <div className="relative">
-              <img src="/mockup.jpg" alt="Material Digital Entre Consultas" className="rounded-xl shadow-lg w-full" />
-              <div className="absolute -bottom-4 -right-4 bg-[#7BA7BC] text-white px-4 py-2 rounded-lg text-sm font-semibold shadow-lg">Acesso imediato no celular</div>
+              <img src="/mockup.webp" alt="Material Digital Entre Consultas" className="rounded-xl shadow-lg w-full" />
+              <div className="absolute -bottom-4 -right-4 bg-[#7BA7BC] text-white px-4 py-2 rounded-lg text-sm font-semibold shadow-lg">Acesso imediato</div>
             </div>
           </div>
         </motion.div>
@@ -198,9 +198,9 @@ function DepoimentosSection() {
   const { ref, isVisible } = useScrollAnimation(0.2);
   const [activeIndex, setActiveIndex] = useState(0);
   const depoimentos = [
-    { nome: "Maria S.", foto: "/testimonial-1.jpg", texto: "Pela primeira vez em semanas consegui dormir tranquila. O protocolo da noite me acolheu quando eu mais precisei e achei que ia desmoronar.", estrelas: 5 },
-    { nome: "João P.", foto: "/testimonial-2.jpg", texto: "É diferente de tudo que já vi. Não é sobre fingir que o medo não existe, é sobre ter um método prático para acalmar o corpo na hora da crise.", estrelas: 5 },
-    { nome: "Ana L.", foto: "/testimonial-3.jpg", texto: "No dia do exame, usei uma das práticas SOS e consegui ficar em paz. Até conversei com outras pessoas na sala de espera sem aquele nó na garganta.", estrelas: 5 }
+    { nome: "Maria S.", foto: "/testimonial-1.webp", texto: "Pela primeira vez em semanas consegui dormir tranquila. O protocolo da noite me acolheu quando eu mais precisei e achei que ia desmoronar.", estrelas: 5 },
+    { nome: "João P.", foto: "/testimonial-2.webp", texto: "É diferente de tudo que já vi. Não é sobre fingir que o medo não existe, é sobre ter um método prático para acalmar o corpo na hora da crise.", estrelas: 5 },
+    { nome: "Ana L.", foto: "/testimonial-3.webp", texto: "No dia do exame, usei uma das práticas SOS e consegui ficar em paz. Até conversei com outras pessoas na sala de espera sem aquele nó na garganta.", estrelas: 5 }
   ];
   return (
     <section ref={ref} className="py-16 sm:py-24 bg-[#F5F0E8]">
@@ -325,7 +325,7 @@ function ComparacaoSection() {
 function OfertaSection() {
   const { ref, isVisible } = useScrollAnimation(0.2);
   return (
-    <section ref={ref} className="py-16 sm:py-24 relative" style={{ backgroundImage: 'linear-gradient(180deg, rgba(250,250,247,0.95), rgba(250,250,247,0.95)), url(/offer-bg.jpg)', backgroundSize: 'cover', backgroundPosition: 'center' }}>
+    <section ref={ref} className="py-16 sm:py-24 relative" style={{ backgroundImage: 'linear-gradient(180deg, rgba(250,250,247,0.95), rgba(250,250,247,0.95)), url(/offer-bg.webp)', backgroundSize: 'cover', backgroundPosition: 'center' }}>
       <div className="w-full px-4 sm:px-6 lg:px-8 xl:px-12">
         <motion.div className="max-w-6xl mx-auto" initial={{ opacity: 0, scale: 0.8 }} animate={isVisible ? { opacity: 1, scale: 1 } : {}} transition={{ duration: 0.8, ease: [0.175, 0.885, 0.32, 1.275] }}>
           <div className="max-w-2xl mx-auto bg-white rounded-2xl p-6 sm:p-10 shadow-xl text-center">
