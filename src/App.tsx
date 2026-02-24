@@ -37,7 +37,7 @@ function HeroSection() {
             NÃO DEIXE A DOENÇA <span className="text-[#7BA7BC]">PARALISAR</span> A SUA VIDA
           </h1>
          <p className="text-base sm:text-lg text-[#6B7B8A] mb-8 max-w-2xl mx-auto">
-             <span className="font-semibold text-[#3D4A54]">Entre Consultas</span>span> é um conjunto de ferramentas práticas para acalmar a mente entre tratamentos, exames e resultados.
+             <span className="font-semibold text-[#3D4A54]">Entre Consultas</span> é um conjunto de ferramentas práticas para acalmar a mente entre tratamentos, exames e resultados.
              Quando a ansiedade domina e os pensamentos não param, 
             <span className="font-semibold text-[#3D4A54]"> consulte um protocolo prático para você recuperar o controle emocional em minutos.</span>
           </p>
@@ -327,8 +327,8 @@ function OfertaSection() {
         <motion.div className="max-w-6xl mx-auto" initial={{ opacity: 0, scale: 0.8 }} animate={isVisible ? { opacity: 1, scale: 1 } : {}} transition={{ duration: 0.8, ease: [0.175, 0.885, 0.32, 1.275] }}>
           <div className="max-w-2xl mx-auto bg-white rounded-2xl p-6 sm:p-10 shadow-xl text-center">
             <p className="text-[#6B7B8A] mb-4">A sua paz mental não pode ficar em suspenso.</p>
-            <h2 className="text-xl sm:text-2xl font-bold text-[#3D4A54] mb-2 uppercase">Protocolo Entre Consultas</h2>
-            <p className="text-[#6B7B8A] mb-8">O mapa definitivo de acolhimento emocional para os dias de espera.</p>
+            <h2 className="text-xl sm:text-2xl font-bold text-[#3D4A54] mb-2 uppercase">Entre Consultas</h2>
+            <p className="text-[#6B7B8A] mb-8">Ferramentas práticas para os dias de espera.</p>
             <div className="mb-8">
               <p className="text-sm text-[#6B7B8A] mb-2 font-medium">INVESTIMENTO ÚNICO</p>
               <p className="text-5xl sm:text-6xl font-bold text-[#7BA7BC]">R$ 37</p>
